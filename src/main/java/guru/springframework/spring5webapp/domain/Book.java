@@ -71,6 +71,16 @@ public class Book {
     }
 
     @Override
+    public String toString() {
+        return "Book{" +
+            " id='" + getId() + "'" +
+            ", title='" + getTitle() + "'" +
+            ", isbn='" + getIsbn() + "'" +
+            ", authors='" + getAuthors() + "'" +
+            "}";
+    }
+
+    @Override
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }

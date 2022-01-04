@@ -55,6 +55,16 @@ public class Author {
     }
 
     @Override
+    public String toString() {
+        return "Author{" +
+            " id='" + getId() + "'" +
+            ", firstName='" + getFirstName() + "'" +
+            ", lastName='" + getLastName() + "'" +
+            ", books='" + getBooks() + "'" +
+            "}";
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (o == this)
             return true;
